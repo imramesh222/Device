@@ -1,0 +1,14 @@
+.carousel-item{
+  height: 400px;
+}
+.carousel-item img{
+  height: 100%;
+}
+.products .card{
+  height: 350%;
+
+}
+
+.products .card img {
+  height: 50%;
+}
