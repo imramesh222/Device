@@ -12,3 +12,12 @@
 .products .card img {
   height: 50%;
 }
+.see{
+  width: max-content;
+  margin-left: 95%;
+
+}
+
+.see a{
+  text-decoration: none;
+}
