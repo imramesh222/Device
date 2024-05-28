@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Online Store</title>
+
+    <!-- cdn link for botstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- fav Icons -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVgQBjtGanOHybMFvU817bdVBafgi1n078q9TanEsAA&s" type="image/x-icon">
+
+    <!-- Cdn link for icons in bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="login-style.css">
+  </head>
+  <body>
+    <header class="bg-info">
+      <div class="container-fluid d-flex justify-content-between  align-items-center mx-0 bg-danger px-3">
+          <div class="logo mx-1">
+              <a href="./index.html" class="text-decoration-none text-light"><h1>My Online Store</h1></a>
+          </div>
+
+          <div class="search">
+              <form class="d-flex ">
+                  <input type="search" class="mx-3">
+                  <i class="bi bi-search"></i>
+              </form>
+          </div>
+      </div>
+
+
+
+      </div>
+  </header>
+    <div class="container py-5 d-flex justify-content-center border shadow mx-6 my-2 w-75">
+      <div class="d-flex justify-content-start" id="form-width">
+        <div class="col-md-4 shadow rounded w-100 ps-4">
+        <form class="w-100">
+          <h1 class="text-dark fw-bold " >Login</h1>
+          <div class="d-flex ">
+            <p class="text-secondary">Doen't have an account yet?</p>
+            <a href="register.html" class="text-primary ms-1 ">Sign Up</a>
+          </div>
+          
+          <div class="m-2">
+            <label class="fw-bold">Email Address</label>
+              <input type="email" class="form-control" placeholder="you@example.com">
+              
+            </div>
+            <div class="m-2">
+              <div class="d-flex justify-content-between">
+                <label class="fw-bold">Password</label>
+                <a href="register.html" class="text-primary ms-1 ">Forgot Password</a>
+              </div>
+              <input type="password" class="form-control" placeholder="Enter 6 character or more">
+            </div>
+            <div class="text-secondary d-flex">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+            </div>
+              <p class="text-secondary">Remember me</p>
+            </div>
+            <button class="btn btn-primary w-100">
+              <h1 class="fs-6">Login</h1>
+            </button>
+            <div class="text-center py-3">
+              <hr class=" d-inline-block align-middle" id="line-x">
+              <span class="px-2">or login with</span>
+              <hr class=" d-inline-block align-middle" id="line-x">
+            </div>
+            <div class="button-container d-flex justify-content-around pb-4">
+              <div class="google">
+                <button class=" d-flex border border-danger  justify-content-between align-items-center rounded px-4 py-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" height="25px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+                  <!-- <i class="bi bi-google fs-4"></i> -->
+                  <h1 class="text-danger" id="bt-h1">Google</h1>
+                </button>
+              </div>
+              <div class="facebook">
+                <button class="d-flex border border-primary justify-content-between align-items-center rounded px-4 py-1 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#228BE6" viewBox="0 0 24 24" width="25px" height="25px">    <path d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005 C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21 c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996 C17.465,9.521,17.001,9,16.403,9z"/></svg>
+                  <!-- <i class="bi bi-facebook fs-4"></i> -->
+                  <h1 class="text-primary" id="bt-h1">Facebook</h1>
+                </button>
+              </div>
+            </div>
+
+        </form>
+        </div>
+
+      </div>
+      <div class="image">
+        <img height="100%" width="100%" title="Girl At Computer Learning Watching Video Course Indoor, Purple Background" alt="Girl At Computer Learning Watching Video Course Indoor, Purple Background 67824016" src="https://en.pimg.jp/067/824/016/1/67824016.jpg">
+      </div>
+    </div>
+
+
+
+
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-secondary text-decoration-none lh-1">
+            <i class="bi bi-browser-edge"></i>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-threads"></i></a></li>
+          <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+    <!-- Endo of footer -->
+    <!-- cdn js for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
