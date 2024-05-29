@@ -10,3 +10,49 @@
 /* #form-width{
   width: 100%;
 } */
+
+#container-width{
+  width: 68%;
+}
+
+
+
+
+/* for different screen */
+/* General styles for elements */
+#bt-h1 {
+  align-self: end;
+  margin-left: 5px;
+}
+
+/* For tablets and below (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  #line-x {
+      width: 25%;
+  }
+
+  #bt-h1 {
+      font-size: 10px;
+  }
+
+  #container-width {
+      /* display: grid;
+      grid-template-columns: 1fr; */
+  }
+}
+
+/* For mobile screens (max-width: 375px) */
+@media screen and (max-width: 375px) {
+  #line-x {
+      width: 25%;
+  }
+
+  #bt-h1 {
+      font-size: 10px;
+  }
+
+  #container-width {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+}
