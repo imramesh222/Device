@@ -1,168 +1,270 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Online Store</title>
+    <title>MyStore</title>
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://banner2.cleanpng.com/20180715/zio/kisspng-logo-font-flame-logo-5b4b2d7c3b73e0.2237387315316535002435.jpg"
+        type="image/x-icon">
 
-    <!-- cdn link for botstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="apple-touch-icon"
+        href="https://banner2.cleanpng.com/20180715/zio/kisspng-logo-font-flame-logo-5b4b2d7c3b73e0.2237387315316535002435.jpg">
+    <!-- CDN LINK FOR BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- fav Icons -->
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVgQBjtGanOHybMFvU817bdVBafgi1n078q9TanEsAA&s" type="image/x-icon">
-
-    <!-- Cdn link for icons in bootstrap -->
+    <!-- CDN link for icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
 
-    <!-- header  -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- start of header -->
     <header class="bg-info">
-        <div class="container-fluid d-flex justify-content-between  align-items-center mx-0 bg-danger px-3">
-            <div class="logo mx-1">
-                <a href="./index.html" class="text-decoration-none text-light"><h1>My Online Store</h1></a>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./index.html" class="text-decoration-none text-white">
+                    <h1>MyStore</h1>
+                </a>
             </div>
-
             <div class="search">
-                <form class="d-flex ">
-                    <input type="search" class="mx-3">
-                    <i class="bi bi-search"></i>
+                <form class="d-flex">
+                    <input type="search" class="form-control mx-2" placeholder="Search...">
+                    <button type="submit" class="btn btn-outline-light"><i class="bi bi-search"></i></button>
+                    <!-- <button>Search</button> -->
                 </form>
             </div>
+
+
         </div>
+        <hr class=" m-0 ">
+        <div class="container d-flex justify-content-between align-items-center py-1">
+            <nav>
+                <ul class="nav ">
+                    <a href="./index.html" class="nav-link text-dark bg-secondary rounded  fs-4 shadow">
+                        <li>Home</li>
+                    </a>
+                    <a href="./product.html" class="nav-link text-dark fs-4">
+                        <li>Products</li>
+                    </a>
+                    <a href="#" class="nav-link text-dark fs-4">
+                        <li>Services</li>
+                    </a>
+                    <a href="#" class="nav-link text-dark fs-4">
+                        <li>Contact</li>
+                    </a>
 
-        <div class="container1 bg-primary">
-            <nav class="navbar d-flex px-2">
-                <ul class="nav nav-pills">
-                    <a href="./index.html" class="nav-link text-dark fs-5 fw-semibold active shadow"><li>Home</li></a>
-                    <a href="product.html"  class="nav-link text-dark fs-5 fw-semibold"><li>Products</li></a>
-                    <a href="services.html" class="nav-link text-dark fs-5 fw-semibold"><li>Service</li></a>
-                    <a href="Contacts.html" class="nav-link text-dark fs-5 fw-semibold"><li>Contact</li></a>
+
                 </ul>
-
-                <div class="icons fs-3  px-3">
-                    <i class="bi bi-person-add"></i>
-                    <i class="bi bi-bag-fill"></i>
-                </div>               
             </nav>
 
+            <div class="icons">
+                <a href="signup.html" class="text-decoration-none fs-4 text-white me-2"><i
+                        class="bi bi-person-add"></i></a>
+                <a href="login.html" class="text-decoration-none fs-4 text-white me-2"><i
+                        class="bi bi-box-arrow-in-right"></i></a>
+                <a href="profile.html" class="text-decoration-none fs-4 text-white "><i
+                        class="bi bi-person-circle"></i></a>
+            </div>
         </div>
-  
-        </div>
+
     </header>
+    <!-- end of header -->
 
-    <!-- End of Header -->
 
-    <!-- Start of Main Section -->
+    <!-- start of main section  -->
     <main>
-        <!-- start of banner -->
-        <div class="banner">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./img/b1.jpg" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/b2.jpg" class="d-block w-100" alt="hi">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/b3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
+        <div class="products">
+            <div class="d-flex">
+                <!-- <div class="category border border-3 col-md-2 p-3">
+                    <h2 class="text-center">All Category</h2>
+                    <hr class="container">
+                    <a href="#">Select All </a>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
-        <!-- end of banner -->
+                    <div class="option">
+                        <input type="checkbox" id="clothes">
+                        <label for="clothes">Clothes</label>
+                    </div>
 
-        <!-- start of products -->
-        <div class="container py-5 products">
-            <h2 class="text-danger text-center">Trending Product</h2>
-            <hr class="container">
-            <div class="d-flex justify-content-center">
-                <div class="col-md-12">
-                    <div class="card-group">
-                        <div class="card m-2 rounded shadow">
-                          <img src="./img/p1.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Men's Blue T-Shirt</h5>
-                            <div class="btn d-flex justify-content-between px-2">
-                                <a href="#" class="btn btn-primary">View Details</a>
-                                <a href="#"  class="btn btn-warning">Add To Cart</a>
+                    <div class="option">
+                        <input type="checkbox" id="clothes">
+                        <label for="clothes">Clothes</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="checkbox" id="clothes">
+                        <label for="clothes">Clothes</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="checkbox" id="clothes">
+                        <label for="clothes">Clothes</label>
+                    </div>
+                </div> -->
+                <div class="productitems col-md-12">
+                        <div class="d-flex justify-content-center ">
+                            <div class="col-md-12">
+                                <div class="card-group">
+                                    <div class="card m-2 rounded shadow">
+                                        <img src="./img/p1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dell Inspiron Ultra</h5>
+
+                                            <div class="btn d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary"><i class="bi bi-eye"></i>View
+                                                    Details</a>
+                                                <a href="#" class="btn btn-warning"><i class="bi bi-bag-plus-fill"></i>
+                                                    Add To Cart</a>
+
+                                            </div>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card m-2 rounded shadow">
+                                        <img src="./img/p1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dell Inspiron Ultra</h5>
+
+                                            <div class="btn d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary"><i class="bi bi-eye"></i>View
+                                                    Details</a>
+                                                <a href="#" class="btn btn-warning"><i class="bi bi-bag-plus-fill"></i>
+                                                    Add To Cart</a>
+
+                                            </div>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card m-2 rounded shadow">
+                                        <img src="./img/p2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dell Inspiron Ultra</h5>
+
+                                            <div class="btn d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary"><i class="bi bi-eye"></i>View
+                                                    Details</a>
+                                                <a href="#" class="btn btn-warning"><i class="bi bi-bag-plus-fill"></i>
+                                                    Add To Cart</a>
+
+                                            </div>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+
+                                    
+
+
+                                </div>
+
+                                
+                                <div class="card-group">
+                                    <div class="card m-2 rounded shadow">
+                                        <img src="./img/p3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dell Inspiron Ultra</h5>
+
+                                            <div class="btn d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary"><i class="bi bi-eye"></i>View
+                                                    Details</a>
+                                                <a href="#" class="btn btn-warning"><i class="bi bi-bag-plus-fill"></i>
+                                                    Add To Cart</a>
+
+                                            </div>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card m-2 rounded shadow">
+                                        <img src="./img/p1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dell Inspiron Ultra</h5>
+
+                                            <div class="btn d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary"><i class="bi bi-eye"></i>View
+                                                    Details</a>
+                                                <a href="#" class="btn btn-warning"><i class="bi bi-bag-plus-fill"></i>
+                                                    Add To Cart</a>
+
+                                            </div>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card m-2 rounded shadow">
+                                        <img src="./img/p3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dell Inspiron Ultra</h5>
+
+                                            <div class="btn d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary"><i class="bi bi-eye"></i>View
+                                                    Details</a>
+                                                <a href="#" class="btn btn-warning"><i class="bi bi-bag-plus-fill"></i>
+                                                    Add To Cart</a>
+
+                                            </div>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+
+                                    
+
+
+                                </div>
+
                             </div>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                          </div>
                         </div>
+                   
+                    
 
-                        <div class="card m-2">
-                            <img src="./img/p3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Men's Green T-Shirt</h5>
-                              <div class="btn d-flex justify-content-between px-2">
-                                  <a href="#" class="btn btn-primary">View Details</a>
-                                  <a href="#"  class="btn btn-warning">Add To Cart</a>
-                              </div>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                            </div>
-                          </div>
-
-                          <div class="card m-2">
-                            <img src="./img/p4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Men's Red T-Shirt</h5>
-                              <div class="btn d-flex justify-content-between px-2">
-                                  <a href="#" class="btn btn-primary">View Details</a>
-                                  <a href="#"  class="btn btn-warning">Add To Cart</a>
-                              </div>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="see">
-                      <i class="bi bi-plus-circle-dotted"></i>
-                      <a href="" class="">See more</a>
-                    </div>
                 </div>
             </div>
         </div>
-          <!-- End of Products -->
-
-          <div class="divsion">
-            
-          </div>
     </main>
-    <!-- End of Main Section -->
 
-    
-    <!-- Star of Footer  -->
-    <div class="container-fluid bg-dark">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-secondary text-decoration-none lh-1">
-            <i class="bi bi-browser-edge"></i>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
-          <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-threads"></i></a></li>
-          <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
-        </ul>
-      </footer>
-    </div>
-    <!-- Endo of footer -->
-    <!-- cdn js for bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- end of main section  -->
 
-  </body>
+    <!-- start of footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-secondary text-decoration-none lh-1">
+          <i class="bi bi-browser-edge"></i>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-threads"></i></a></li>
+        <li class="ms-3"><a class="text-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+      </ul>
+    </footer>
+    <!-- end of footer  -->
+
+
+
+
+
+    <!-- CDN JS FOR BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
