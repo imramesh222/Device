@@ -21,7 +21,8 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
-
+    <!-- cdn for aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
 
         </div>
         <hr class=" m-0 ">
-        <div class="container d-flex justify-content-between align-items-center py-1 sticky-top">
+        <div class="container d-flex justify-content-between align-items-center py-1 sticky-top" >
             <nav>
                 <ul class="nav ">
                     <a href="./index.html" class="nav-link text-dark bg-secondary rounded  fs-4 shadow">
@@ -81,7 +82,7 @@
 
     <!-- start of main section  -->
     <main>
-        <div class="products">
+        <div class="products" data-aos="fade-up">
             <div class="d-flex">
                 <!-- <div class="category border border-3 col-md-2 p-3">
                     <h2 class="text-center">All Category</h2>
@@ -257,8 +258,12 @@
     </footer>
     <!-- end of footer  -->
 
-
-
+<!-- cdn for aos js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+<script>
+    AOS.init();
+  </script>
 
 
     <!-- CDN JS FOR BOOTSTRAP -->
